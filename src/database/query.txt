@@ -1,0 +1,27 @@
+create database if not exists verduleria;
+use verduleria;
+
+create table if not exists `producto`(
+id_producto int auto_increment,
+nombre_producto nvarchar(100)  not null,
+categoria nvarchar(20) not null,
+img_url nvarchar(255) not null,
+precio double not null,
+stock int not null,
+descripcion nvarchar(255) not null,
+primary key(id_producto)
+);
+
+select * from producto;
+insert into producto (nombre_producto, categoria, img_url, precio, stock, descripcion) 
+values ('Tomate', 'Verduras', 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c23b.png', 4.50, 20, 'El tomate es un alimento que sorprende por su versatilidad en la comida y sus aportes nutricionales') ;
+insert into producto (nombre_producto, categoria, img_url, precio, stock, descripcion) 
+values ('Cebolla', 'Verduras', 'https://www.pngarea.com/pngm/426/3181716_cebolla-png-agrocuna-daimiel-cebollas-hd-png-download.png', 3.50, 20, 'La cebolla es uno de los ingredientes imprescindibles de la dieta mediterránea, por lo que su uso en la cocina es muy común y está muy extendido.') ;
+insert into producto (nombre_producto, categoria, img_url, precio, stock, descripcion) 
+values ('Espinaca', 'Verduras', 'http://pngimg.com/uploads/spinach/spinach_PNG57.png', 6.20, 20, 'La espinaca es una planta herbácea cuyas hojas, verdes y dispuestas en roseta, se consumen tanto crudas como cocinadas.') ;
+insert into producto (nombre_producto, categoria, img_url, precio, stock, descripcion) 
+values ('Manzana', 'Frutas', 'https://assets.stickpng.com/images/580b57fbd9996e24bc43c112.png', 6.50, 20, 'La pulpa es crujiente y jugosa, de sabor ligeramente ácido. Se consume como manzana de mesa, aunque también se cocina.') ;
+insert into producto (nombre_producto, categoria, img_url, precio, stock, descripcion) 
+values ('Fresa', 'Frutas', 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c1a3.png', 8.99, 20, 'Las fresas se consumen de diversas formas. Como fruta fresca son muy populares y con crema se consumen como postre.') ;
+insert into producto (nombre_producto, categoria, img_url, precio, stock, descripcion) 
+values ('Uva', 'Frutas', 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c14a.png', 11.99, 20, 'Fruto de la vid, redondo u ovalado y jugoso que nace en racimos. Se consume como fruto fresco, o para elaborar vino o destilados.') ;

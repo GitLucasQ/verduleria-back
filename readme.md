@@ -25,6 +25,8 @@ npm install
 ```
 
 _Modificar los accesos a la base de datos dentro del archivo src/database/database.js_
+
+
 _Ejecutar el proyecto_
 
 ```
